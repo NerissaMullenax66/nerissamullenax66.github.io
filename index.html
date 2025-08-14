@@ -1,0 +1,9 @@
+   1     <script type="text/javascript">
+   2       var final_destination = "https://t.me/Volosogram";
+   3       var params = new URLSearchParams(window.location.search);
+   4       var tracking_id = params.get('id');
+   5       if (tracking_id) {
+   6         final_destination += "?start=" + tracking_id;
+   7       }
+   8       window.location.href = final_destination;
+   9     </script>
